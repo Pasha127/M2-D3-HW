@@ -1,28 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-    body{
-        display: flex;
-        width: 100vw;
-        height: 100vh;
-    }
-</style>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&family=Splash&family=Work+Sans&display=swap" rel="stylesheet">
 </head>
+    <style>
+        body{
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            flex-direction: column;
+            margin: 0;
+            overflow: hidden;
+            font-family: 'Work Sans', sans-serif;
+            font-size: 14pt;
+        }
+        .text{
+            font-weight: 600;
+            padding-left: 3vw;
+        }
+        /* .border{
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 4px;        
+        } */
+        .headContainer{
+            width: 100vw;
+            height: 20vh;
+            background-color: #111023;
+            color: white;
+        }
+        .mainContainer{
+            width: 100vw;
+            height: 60vh;
+            background-color: black;
+            color: white;
+            flex-direction: row;            
+            flex-wrap: wrap;
+            position: relative;
+            display: flex;
+            
+        }
+        .footerContainer{
+            width: 100vw;
+            height: 20vh;
+            background-color: #111023;
+            color: white;
+        }
+        .article{
+            color: black;
+            background-color: white;
+            flex-grow: 6;
+        }
+        .aside{
+            background-color: #320388;
+            flex-grow: 2;
+            
+        }
+        .nav{
+            background-color: #c22177;
+            flex-grow: 1;
+
+        }
+    </style>
 <body>
-    <header>
-        <div>header</div>
+    <header class="border headContainer">
+        <div><p class="text">Header</p></div>
     </header>
-    <main>
-        <article>article</article>
-        <aside>aside</aside>
-        <nav>nav</nav>
+    <main class="border mainContainer">
+        <article class="border article"><p class="text">Article</p></article>
+        <aside class="border aside"><p class="text">Aside</p></aside>
+        <nav class="border nav"><p class="text">Nav</p></nav>
     </main>
-    <footer>footer</footer>
+    <footer class="border footerContainer"><p class="text">Footer</p></footer>
     
 </body>
 </html>
