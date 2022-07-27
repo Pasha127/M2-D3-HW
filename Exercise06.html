@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6</title>
+</head>
+<style>
+    body{
+        display: flex;
+        background-color: black;
+        margin: 0%;
+        height: 100vh;
+        width: 100vw;
+        align-items: center;
+    }
+    .mainContainer{
+        height: 50vh;
+        width: 100vw;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bigBox{
+        width: 95vw;
+        height: 45vh;
+        border: 2px solid black;
+        border-radius: 10vh;
+        display: flex;
+        overflow: hidden;
+    }
+    .greenBox{
+        border-right: 2px solid black;
+        background-color: #88b46f;
+        flex-grow: 1;
+                
+    }
+    .blueNYellow{
+        flex-grow: 1;
+        display: flex;
+
+        
+    }
+    .blue{
+        flex-grow: 1;
+        background-color: #699afc;
+    }
+    .yellowContainer{
+        flex-grow: 3;
+        display: flex;
+        flex-direction: column;
+    }
+    .yellow01{
+        background-color: #fbf7c0;
+        flex-grow: 1;
+        
+    }
+    .yellow02{
+        background-color: #f7ed73;
+        flex-grow: 1;
+        
+    }
+    .yellow03{
+        background-color: #f4e43e;
+        flex-grow: 1;
+
+    }
+</style>
+<body>
+    <div class="mainContainer">
+        <div class="bigBox">
+            <div class="greenBox"></div>
+            <div class="blueNYellow">
+                <div class="blue"></div>
+                <div class="yellowContainer">
+                    <div class="yellow01"></div>
+                    <div class="yellow02"></div>
+                    <div class="yellow03"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
