@@ -9,7 +9,7 @@
 <style>
     body{
         display: flex;
-        background-color: black;
+        background-color: rgb(255, 255, 255);
         margin: 0%;
         height: 100vh;
         width: 100vw;
@@ -23,18 +23,46 @@
         justify-content: center;
         align-items: center;
     }
-    .bigBox{
+    
+   /*  @media (max-width:1190px){
+        .bigBox{
         width: 95vw;
         height: 45vh;
         border: 2px solid black;
-        border-radius: 10vh;
+        border-radius: 5vh;
         display: flex;
         overflow: hidden;
+        }
+    }
+    @media (min-width:1190px){
+        .bigBox{
+        width: calc(2.8*45vh);
+        height: 45vh;
+        border: 2px solid black;
+        border-radius: 5vh;
+        display: flex;
+        overflow: hidden;
+        }
+    } */
+    .bigBox{
+    width: calc(2.8*400px);
+    height: 400px;
+    border: 2px solid black;
+    border-radius: 5vh;
+    display: flex;
+    overflow: hidden;
     }
     .greenBox{
         border-right: 2px solid black;
         background-color: #88b46f;
-        flex-grow: 1;                
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;                
+    }
+    .greenBox p{
+        text-align: center;
     }
     .blueNYellow{
         flex-grow: 1;
@@ -43,6 +71,13 @@
     .blue{
         flex-grow: 1;
         background-color: #699afc;
+        color: white;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+    .blue p{
+        padding-left: 15px;
     }
     .yellowContainer{
         flex-grow: 3;
@@ -75,9 +110,13 @@
 <body>
     <div class="mainContainer">
         <div class="bigBox">
-            <div class="greenBox"></div>
+            <div class="greenBox">
+                <p>First Column<br>Height 400px<br>Green-ish background<br>Text Centered</brr></p>
+            </div>
             <div class="blueNYellow">
-                <div class="blue"></div>
+                <div class="blue">
+                    <p><strong>Second Column<br>Text To the bottom<br>Bold, blueish<br>background</strong></brr></p>
+                </div>
                 <div class="yellowContainer">
                     <div class="yellow01">
                         <p>Third Column Part 1</p>
